@@ -123,7 +123,6 @@ http://127.0.0.1:8000/
 ### Home Page
 
 ![HomePage](screenshots/Homepage.png)
-
 ![HomePage](screenshots/Homepage_.png)
 
 ### Admin Login
@@ -170,7 +169,7 @@ http://127.0.0.1:8000/
 
 ![Student Change Password](screenshots/Student_Change_Password.png)
 
-## 🎯 Learning Outcomes
+## 🎯 Learning Outcomes:
 
 This project helped me learn:
 
