@@ -122,76 +122,53 @@ http://127.0.0.1:8000/
 
 ### Home Page
 
-```md
 ![HomePage](screenshots/Homepage.png)
+
 ![HomePage](screenshots/Homepage_.png)
-```
 
 ### Admin Login
 
-```md
 ![Admin Login](screenshots/AdminLogin.png)
-```
 
 ### Admin Students Management
 
-```md
 ![Admin Students Management](screenshots/Admin_Students_Management.png)
-```
 
 ### Admin Issue Book
 
-```md
 ![Admin Issue Book](screenshots/Admin_Issue_Book.png)
-```
 
 ### Admin Issued Books Dashboard
 
-```md
 ![Admin Issued Books Dashboard](screenshots/Admin_Issued_Books_Dashboard.png)
-```
 
 ### Admin Book Management
 
-```md
 ![Admin Book Management](screenshots/Admin_Book_Management.png)
-```
 
 ### Admin Add Book
 
-```md
 ![Admin Add Book](screenshots/Admin_Add_Book.png)
-```
 
 ### Student Registration
 
-```md
 ![Student Registration](screenshots/StudentRegistration.png)
-```
 
 ### Student Login
 
-```md
 ![Student Login](screenshots/StudentLogin.png)
-```
 
 ### Student Profile
 
-```md
-![Student Profile](screenshots/StudentProfile.png)
-```
+![Student Profile](screenshots/Student_Profile.png)
 
 ### Student Issued Books
 
-```md
 ![Student Issued Books](screenshots/Student_Issued_Books.png)
-```
 
 ### Student Change Password
 
-```md
 ![Student Change Password](screenshots/Student_Change_Password.png)
-```
 
 ## 🎯 Learning Outcomes
 
