@@ -1,0 +1,96 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} Student Registration {% endblock %}
+
+{% block body %}
+<div class="row justify-content-center">
+<div class="col-md-8">
+
+<div class="card-custom">
+<h2 class="text-center mb-4">🎓 Student Registration</h2>
+
+<form method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+{% csrf_token %}
+
+<div class="row">
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="username" placeholder="Username" required>
+</div>
+<div class="col-md-6">
+<input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="first_name" placeholder="First Name" required>
+</div>
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="last_name" placeholder="Last Name" required>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<input type="number" class="form-control mb-3" name="phone" placeholder="Mobile Number" required>
+</div>
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="branch" placeholder="Branch" required>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="classroom" placeholder="Class" required>
+</div>
+<div class="col-md-6">
+<input type="text" class="form-control mb-3" name="roll_no" placeholder="Roll Number" required>
+</div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Upload Student Image</label>
+<input type="file" class="form-control" name="image" required>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<input type="password" id="pass" class="form-control mb-3" name="password" placeholder="Password" required>
+</div>
+<div class="col-md-6">
+<input type="password" id="cpass" class="form-control mb-3" name="confirm_password" placeholder="Confirm Password" required>
+</div>
+</div>
+
+<button class="btn btn-primary w-100">Register</button>
+
+<p class="text-center mt-3">
+Already have an account? <a href="/student_login/">Login</a>
+</p>
+
+</form>
+</div>
+
+</div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+// Password validation
+function validateForm(){
+let p = document.getElementById("pass").value;
+let cp = document.getElementById("cpass").value;
+
+if(p.length < 3){
+    alert("Password must be at least 3 characters");
+    return false;
+}
+if(p !== cp){
+    alert("Passwords do not match");
+    return false;
+}
+return true;
+}
+</script>
+{% endblock %}

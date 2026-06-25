@@ -1,0 +1,73 @@
+{% extends 'student_navbar.html' %}
+{% load static %}
+
+{% block title %} Issued Books {% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+
+    <!-- HEADER -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">📚 My Issued Books</h2>
+        <p class="text-muted">View all books issued to you</p>
+    </div>
+
+    <!-- CARD -->
+    <div class="card-custom p-4">
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover align-middle text-center" id="example">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Issued Date</th>
+                        <th>Expiry Date</th>
+                        <th>Fine</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    {% for i in li1 %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{i.0}}</td>
+                        <td>{{i.1}}</td>
+                        <td>{{i.2}}</td>
+                        <td>{{i.3}}</td>
+
+                        {% endfor %}
+
+                        {% for i in li2 %}
+                        <td>{{i.0}}</td>
+                        <td>{{i.1}}</td>
+
+                        <!-- FINE BADGE -->
+                        <td>
+                            {% if i.2 > 0 %}
+                                <span class="badge bg-danger">₹ {{i.2}}</span>
+                            {% else %}
+                                <span class="badge bg-success">No Fine</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
