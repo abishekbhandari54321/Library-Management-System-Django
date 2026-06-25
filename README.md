@@ -1,98 +1,216 @@
-# Library Management System using Python on Django Framework
+# 📚 Library Management System
 
-### About the Project
-Library Management System Project created with Django. Developed web services using Python (Django Framework) where an admin can perform <code>C R U D</code> (Create, Read, Update and Delete) operations
+A web-based **Library Management System** built using **Python and Django**. The application helps manage books, students, book issuing, returning, and library operations through dedicated Admin and Student portals.
 
-**Prerequisite:** 
+---
 
-Backend: <code>[Python](https://github.com/mrankitgupta/Python-Roadmap)</code> 📑 & <code>[Django Framework](https://github.com/mrankitgupta)</code> 🗂️
+## Features:
 
-Frontend: <code>[HTML](https://github.com/mrankitgupta)</code> & <code>[CSS](https://github.com/mrankitgupta)</code>
+### Admin Portal
 
-### Objective
+- Admin Authentication
+- Manage Books (Add, Update, Delete)
+- Manage Students
+- Issue and Return Books
+- Track Issued Books
+- Fine Management
+- Search and Filter Records
 
-**Anyone can**
+### Student Portal
 
-1. see all the books in homepage
+- Student Registration
+- Student Login
+- Browse Available Books
+- Request Books
+- View Issued Books
+- Check Fine Details
+- Track Book Return Status
 
-2. search books based on author or name of the book or category of the book
+### General Features
 
-3. sort books or author alphabetically
+- User Authentication System
+- Responsive User Interface
+- Book Management
+- Student Management
+- Issue & Return Tracking
+- Fine Calculation System
 
-**Student can**
+---
 
-1. login / signup ,
+## Technologies Used:
 
-2. can request book
+- Python
+- Django
+- HTML5
+- CSS3
+- Bootstrap
+- SQLite
 
-3. see their own issues and filter them based on :
-   * requested issues ,
-   * issued books or
-   * all of them together
-   
-4. check their own fines
+---
 
-5. can see
-   * the days remaining to return a particular book or
-   * the number of days passed the return date of a particular book in the my fines page
+## Project Structure:
 
-**Admin can**
+```text
+Library_Management_System_Django/
+│
+├── library/
+├── LibraryManagementSystem/
+├── static/
+├── templates/
+├── manage.py
+├── db.sqlite3
+└── README.md
+```
 
-1. login to admin dashboard
+---
 
-2. check all issues :
-   * see issues ,
-   * delete issues ,
-   * search issues by studentid
-   * filter issues based on :
-      * issued or not,
-      * returned or not ,
-      
-3. accept a issue :
-   * from the dashboard where admin has to manually select return date or
-   * from the Issue requests page where return date is automatically calculated
+## Installation:
 
-4. add , delete search books and filter books based on author
+### Clone the Repository
 
-5. add , delete , search author
+```bash
+git clone https://github.com/abishekbhandari54321/Library-Management-System-Django.git
+```
 
-6. calculate fine by clicking a button ,
+### Navigate to the Project Directory
 
-7. create, delete fine ,search fines for studentid
+```bash
+cd Library-Management-System-Django
+```
 
-8. toggle fine paid status (if paid in cash)
+### Create Virtual Environment
 
-9. search ,modify,add,delete students , filter them based on department and check all fines and issues of that student
+```bash
+python -m venv venv
+```
 
-10. can see the last-login , date joined & the student associated to a particular user
+### Activate Virtual Environment
 
-11. can change password for any user
+#### Windows
 
-**More ...**
+```bash
+venv\Scripts\activate
+```
 
-1. While signing up if studentID is already associated to a user in this platform then it will show a error without reloading the page and as soon as correct id is given then the error will go away
+### Install Dependencies
 
-2. Books in homepage will show status of issued , issue requested or request issue based on whether the book is issued or requested for a issue or is not requested for logged-in students only
+```bash
+pip install django
+```
 
+### Run Database Migrations
 
-## Technologies used ⚙️
+```bash
+python manage.py migrate
+```
 
-* <a href="https://github.com/mrankitgupta/Python-Roadmap">Python</a> <a href="https://github.com/mrankitgupta/Python-Roadmap" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="25" height="20"/> </a>
+### Start Development Server
 
-* <a href="https://github.com/mrankitgupta">Django</a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/mrankitgupta/mrankitgupta/blob/main/images/icons8-django.svg" alt="django" width="40" height="30"/> </a>
+```bash
+python manage.py runserver
+```
 
-* <a href="https://github.com/mrankitgupta">HTML</a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="30"/> </a>
+### Open in Browser
 
-* <a href="https://github.com/mrankitgupta">CSS</a> 
+```text
+http://127.0.0.1:8000/
+```
 
-## For any queries/doubts 🔗 👇 
+---
 
-### [Ankit Gupta](https://bio.link/AnkitGupta)
-<p align="left"> <a href="https://twitter.com/MrAnkitGupta_/" target="blank"><img src="https://img.shields.io/twitter/follow/MrAnkitGupta_?logo=twitter&style=for-the-badge" alt="MrAnkitGupta_" /></a> </p>
+## 📸 Screenshots
 
-<a href="https://www.linkedin.com/in/mrankitgupta" target="blank"><img align="center" src="https://img.shields.io/badge/-MrAnkitGupta-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mrankitgupta/" alt="MrAnkitGupta" height="20" width="100" /></a>
-<a href="https://www.instagram.com/MrAnkitGupta_" target="blank"><img align="center" src="https://img.shields.io/badge/-@MrAnkitGupta_-D7008A?style=flat-square&labelColor=D7008A&logo=Instagram&logoColor=white&link=https://www.instagram.com/MrAnkitGupta_" alt="MrAnkitGupta_" height="20" width="110" /></a>
-<a href="https://bio.link/AnkitGupta" target="blank"><img align="center" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white&link=https://bio.link/AnkitGupta" alt="AnkitGupta" height="20" width="90" /></a>
-<a href="https://github.com/mrankitgupta/" target="blank"><img align="center" src="https://img.shields.io/github/followers/mrankitgupta?label=Follow&style=social&link=https://github.com/mrankitgupta/" alt="MrAnkitGupta" height="20" width="90" /></a>
+### Home Page
 
-  
+```md
+![HomePage](screenshots/Homepage.png)
+![HomePage](screenshots/Homepage_.png)
+```
+
+### Admin Login
+
+```md
+![Admin Login](screenshots/AdminLogin.png)
+```
+
+### Admin Students Management
+
+```md
+![Admin Students Management](screenshots/Admin_Students_Management.png)
+```
+
+### Admin Issue Book
+
+```md
+![Admin Issue Book](screenshots/Admin_Issue_Book.png)
+```
+
+### Admin Issued Books Dashboard
+
+```md
+![Admin Issued Books Dashboard](screenshots/Admin_Issued_Books_Dashboard.png)
+```
+
+### Admin Book Management
+
+```md
+![Admin Book Management](screenshots/Admin_Book_Management.png)
+```
+
+### Admin Add Book
+
+```md
+![Admin Add Book](screenshots/Admin_Add_Book.png)
+```
+
+### Student Registration
+
+```md
+![Student Registration](screenshots/StudentRegistration.png)
+```
+
+### Student Login
+
+```md
+![Student Login](screenshots/StudentLogin.png)
+```
+
+### Student Profile
+
+```md
+![Student Profile](screenshots/StudentProfile.png)
+```
+
+### Student Issued Books
+
+```md
+![Student Issued Books](screenshots/Student_Issued_Books.png)
+```
+
+### Student Change Password
+
+```md
+![Student Change Password](screenshots/Student_Change_Password.png)
+```
+
+## 🎯 Learning Outcomes
+
+This project helped me learn:
+
+- Django Framework
+- CRUD Operations
+- Authentication System
+- Database Management
+- Template Inheritance
+- Frontend Integration
+- Git & GitHub Workflow
+
+---
+
+## 👨‍💻 Author
+
+Abishek Bhandari
+
+GitHub: https://github.com/abishekbhandari54321
+
+---
